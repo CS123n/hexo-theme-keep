@@ -169,3 +169,69 @@ button {
 .clear {
   clear: both;
 }
+
+
+// ======================================================================
+// background
+// ======================================================================
+.page-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.light-mode {
+  .category-container{
+    background: rgba(255,255,255,0.8); /*白色半透明*/
+  }
+
+  .article-content-container{
+    background: rgba(255,255,255,0.9); /*白色半透明*/
+  }
+
+  .category-list-container {
+    background: rgba(255,255,255,0.8); /*白色半透明*/
+  }
+
+  .home-content-container {
+    background: rgba(255,255,255,0);
+    .home-article-list .home-article-item {
+      background: rgba(255,255,255,0.8); /*白色半透明*/
+    }
+  }
+
+  .tag-container {
+    background: rgba(255,255,255,0.8);
+  }
+
+  .footer {
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #fff);
+  }
+
+  .header-wrapper {
+    background: linear-gradient(to bottom, #fff, rgba(255,255,255,0.4));
+  }
+
+  .page-template-container {
+    background: rgba(255,255,255,0.8);
+  }
+
+  .tagcloud-container {
+    background: rgba(255,255,255,0.8); /*白色半透明*/
+  }
+
+  .page-aside {
+      background: rgb(247,249,252);
+  }
+}
+
+.dark-mode {
+  .page-main-content {
+    background: var(--background-color);
+  }
+
+  .page-aside{
+    background: var(--background-color);
+  }
+}

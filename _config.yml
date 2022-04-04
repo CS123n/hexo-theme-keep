@@ -2,9 +2,9 @@
 #  Your basic info
 # ---------------------------------------------------------------------------------------
 base_info:
-  title: Keep Theme
-  author: Keep Team
-  url: https://keep.xpoet.cn/
+  title: 悠悠笔记
+  author: 刘悠悠
+  url: https://blog.liulp.club/
   # Logo image (You can use local image, image external link or don’t fill)
   logo_img:
 
@@ -16,13 +16,13 @@ style:
   primary_color: "#0066CC"
 
   # Avatar (You can use local image or image external link)
-  avatar: /images/avatar.svg
+  avatar: https://i0.hdslb.com/bfs/album/74f69e6b6d808fbda6357e72d4870c14960004de.webp
 
   # Favicon (You can use local image or image external link)
-  favicon: /images/logo.svg
+  favicon: https://cdn.jsdelivr.net/gh/CS123n/source@master/blog/202204031015174.ico
 
   # Article image align position, value: left | center
-  article_img_align: left
+  article_img_align: center
 
   # Left side width
   left_side_width: 260px
@@ -32,7 +32,7 @@ style:
 
   # Mouse hover
   hover:
-    shadow: false # shadow effect when the mouse hover
+    shadow: true # shadow effect when the mouse hover
     scale: false # scale effect when the mouse hover
 
   # First screen
@@ -46,7 +46,7 @@ style:
     progress_bar:
       enable: false
     percent:
-      enable: false
+      enable: true
 
 # ---------------------------------------------------------------------------------------
 # Social contact link
@@ -68,11 +68,11 @@ social_contact:
 # ---------------------------------------------------------------------------------------
 menu:
   Home: /
-  Archives: /archives
-  # Categories: /categories
-  # Tags: /tags
+  # Archives: /archives
+  Categories: /categories
+  Tags: /tags
   # Links: /links
-  # About: /about
+  About: /about
   # Changelog: /changelog
   # ......
 
@@ -81,11 +81,11 @@ menu:
 # ---------------------------------------------------------------------------------------
 home_article:
   category:
-    enable: false # show category in home page article block
-    limit: 3 # max number of categories shown in home page article block
+    enable: true # show category in home page article block
+    limit: 2 # max number of categories shown in home page article block
   tag:
-    enable: false # show tags in home page article block
-    limit: 5 # max number of tags shown in home page article block
+    enable: true # show tags in home page article block
+    limit: 3 # max number of tags shown in home page article block
 
 # ---------------------------------------------------------------------------------------
 # Post page Settings
@@ -95,13 +95,13 @@ post:
   # Dependencies: hexo-wordcount (npm install hexo-wordcount)
   # See: https://github.com/willin/hexo-wordcount
   word_count:
-    enable: false
-    wordcount: false # word count, one article
+    enable: true
+    wordcount: true # word count, one article
     min2read: false # time to read, one article
 
   # Author label
   author_label:
-    enable: true
+    enable: false
     auto: true # if true, show Lv1, Lv2, Lv3... , If false, show custom label
     # label array item can be one or more
     custom_label_list: ["Trainee", "Engineer", "Architect", "CTO", "BOSS"]
@@ -110,17 +110,17 @@ post:
 # Code copy
 # ---------------------------------------------------------------------------------------
 code_copy:
-  enable: false
+  enable: true
   style: default # values: default | mac
 
 # ---------------------------------------------------------------------------------------
 # Table of Contents in the Sidebar
 # ---------------------------------------------------------------------------------------
 toc:
-  enable: false
+  enable: true
 
   # Automatically add list number to toc.
-  number: false
+  number: true
 
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false
@@ -141,9 +141,9 @@ website_count:
   # busuanzi
   # See: http://ibruce.info/2015/04/04/busuanzi/
   busuanzi_count:
-    enable: false
-    site_uv: false
-    site_pv: false
+    enable: true
+    site_uv: true
+    site_pv: true
     page_pv: false
 
 # ---------------------------------------------------------------------------------------
@@ -152,7 +152,7 @@ website_count:
 # See: https://github.com/theme-next/hexo-generator-searchdb
 # ---------------------------------------------------------------------------------------
 local_search:
-  enable: false
+  enable: true
   preload: false # Preload the search data when the page loads
 
 # ---------------------------------------------------------------------------------------
@@ -195,7 +195,7 @@ rss:
 # Lazyload image
 # ---------------------------------------------------------------------------------------
 lazyload:
-  enable: false
+  enable: true
 
 # ---------------------------------------------------------------------------------------
 # CDN
@@ -214,7 +214,7 @@ pjax:
 # ---------------------------------------------------------------------------------------
 footer:
   since: 2020 # the starting year of your website, Can be null
-  icp: # ICP record number of your website, Can be null
+  icp: 浙ICP备20029940号
   upyun: # url
 
 # ---------------------------------------------------------------------------------------

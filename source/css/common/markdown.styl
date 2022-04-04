@@ -16,7 +16,6 @@
     background: var(--second-background-color);
   }
 
-
   p {
     line-height: 2;
     color: var(--default-text-color);
@@ -234,5 +233,31 @@
       background-color: var(--second-background-color);
     }
   }
+
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    overflow: auto;
+
+    td, th {
+      padding: 5px 10px;
+      border: 1px solid var(--border-color);
+    }
+
+    tr:nth-child(even), thead{
+      background-color: var(--highlight-gutter-bg-color);
+    }
+  }
+
+  .highlight table {
+    background-color: var(--background-color);
+
+    td, th {
+      padding: 0;
+      border: 0;
+    }
+  }
+
 }
 

@@ -1,5 +1,26 @@
 <footer class="footer">
     <div class="info-container">
+        <div class="github-badge">
+            <a style="color: #fff" rel="license noopener" href="//hexo.io" target="_blank">
+            <span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo</span></a>
+        </div>
+        <div class="github-badge">
+            <a style="color: #fff" rel="license noopener" href="//github.com/XPoet/hexo-theme-keep" target="_blank">
+            <span class="badge-subject">Theme</span><span class="badge-value bg-red">Keep</span></a>
+        </div>
+        <div class="github-badge">
+            <a style="color: #fff" rel="license noopener" href="//www.jsdelivr.com/" target="_blank">
+            <span class="badge-subject">CDN</span><span class="badge-value bg-brightgreen">&nbspjsDelivr</span></a>
+        </div>
+        <div class="github-badge">
+            <a style="color: #fff" rel="license noopener" href="http://busuanzi.ibruce.info" target="_blank">
+            <span class="badge-subject" id="busuanzi_container_site_pv">PV</span><span class="badge-value bg-orange" id="busuanzi_value_site_pv" target="_blank">&nbsp</span></a>
+        </div>
+        <div class="github-badge">
+            <a style="color: #fff" rel="license noopener" href="//blog.liulp.club" target="_blank">
+            <span class="badge-subject">Survived</span><span class="badge-value bg-blueviolet" id="spantime">&nbsp</span></a>
+        </div>
+
         <div class="copyright-info info-item">
             &copy;
             <% if (theme.footer.hasOwnProperty('since') && theme.footer.since) { %>
@@ -7,8 +28,11 @@
               -
             <% } %>
             <%= date(new Date(), 'YYYY') %>&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/"><%= theme.base_info.author || config.author %></a>
+            <% if (theme.footer.hasOwnProperty('icp') && theme.footer.icp) { %>
+                &nbsp;<i class="fas fa-coffee"></i>&nbsp;<a target="_blank" rel="nofollow" href="https://beian.miit.gov.cn"><%= theme.footer.icp %></a>
+            <% } %>
         </div>
-        <% if (theme.website_count.busuanzi_count.enable === true) { %>
+        <!-- <% if (theme.website_count.busuanzi_count.enable === true) { %>
             <script async <%= theme.pjax.enable === true ? 'data-pjax' : '' %> src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
             <div class="website-count info-item">
                 <% if (theme.website_count.busuanzi_count.site_uv) { %>
@@ -22,17 +46,19 @@
                     </span>
                 <% } %>
             </div>
-        <% } %>
-        <div class="theme-info info-item">
+        <% } %> -->
+        <!-- <div class="theme-info info-item">
             <%- __('powered_by', '<a target="_blank" href="https://hexo.io">Hexo</a>') %>&nbsp;|&nbsp;<%- __('theme') %>&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v<%= theme.version %></a>
-        </div>
-        <% if (theme.footer.hasOwnProperty('icp') && theme.footer.icp) { %>
+        </div> -->
+        <!-- <% if (theme.footer.hasOwnProperty('icp') && theme.footer.icp) { %>
             <div class="icp-info info-item"><a target="_blank" rel="nofollow" href="https://beian.miit.gov.cn"><%= theme.footer.icp %></a></div>
-        <% } %>
-        <% if (theme.footer.hasOwnProperty('upyun') && theme.footer.upyun) { %>
+        <% } %> -->
+        <!-- <% if (theme.footer.hasOwnProperty('upyun') && theme.footer.upyun) { %>
             <div class="icp-info info-item"><a target="_blank" rel="nofollow" href="<%= theme.footer.upyun %>">本网站由
                 <img src="/images/upyun.png" alt="upyun" srcset="" height="24" style="position:relative; top:6px">
                 提供CDN加速/云存储服务</a></div>
-        <% } %>
+        <% } %> -->
+
+        <!-- <script async <%= theme.pjax.enable === true ? 'data-pjax' : '' %> src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
     </div>
 </footer>

@@ -1,11 +1,9 @@
 .footer {
   font-size: 1rem;
   color: var(--third-text-color);
-
-
+  
   a {
     color: var(--third-text-color);
-
 
     &:hover {
       color: var(--primary-color);
@@ -14,6 +12,7 @@
   }
 
   .info-container {
+    padding-top: 20px;
     padding-bottom: 10px;
     text-align: center;
   }
@@ -24,6 +23,56 @@
 
   .icon-animate {
     animation: icon-animate 1.2s ease-in-out infinite;
+  }
+
+  .github-badge {
+    display: inline-block;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    background-color: #abbac3;
+    color: #fff;
+    text-shadow: none;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .github-badge a span{
+    color: #fff;
+  }
+
+  .github-badge .badge-subject {
+    display: inline-block;
+    padding: 4px 4px 4px 6px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color: #4d4d4d;
+  }
+
+  .github-badge .bg-blue {
+    background-color: #007ec6!important;
+  }
+
+  .github-badge .badge-value {
+    display: inline-block;
+    padding: 4px 6px 4px 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  .github-badge .bg-brightgreen {
+    background-color: #4dc820!important;
+  }
+
+  .github-badge .bg-orange {
+    background-color: orange!important;
+  }
+
+  .github-badge .bg-blueviolet {
+    background-color: #8833d7!important;
+  }
+
+  .github-badge .bg-red {
+    background-color: #e05d44!important;
   }
 
 }
